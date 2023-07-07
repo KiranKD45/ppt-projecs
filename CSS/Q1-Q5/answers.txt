@@ -1,0 +1,21 @@
+Q.1 What is a Media Query in CSS, and what is its purpose?
+    A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.
+    main purpose of media query is Used for responsive design.
+
+Q.2 How do you define a media query in CSS?
+    
+    @media screen and (width:) {
+
+    }
+
+Q.3 Explain the concept of Breakpoints in Responsive Web Design and How They are used in Media Queries.
+
+   Every website is accessed via devices with different screen sizes and resolutions. The software has to render perfectly across each screen size. Content or images cannot be distorted, cut out, or obscured.To allow this, developers have to use CSS breakpoints. 
+   they are used in media query with the width and height and dimensions of a website.
+
+Q.4 What is the purpose of using Media Queries for Print Media?
+
+   by using print media we can have certain print option to get the certain part of website.
+
+Q.5 What is the purpose of the orientation media feature?
+    orientation is useful to declare whether the website is to be in landscape or portrait is declared in meadia query based on that a developer can add css.  

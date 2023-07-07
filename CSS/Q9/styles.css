@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+    height: 100vh;
+}
+
+footer{
+    margin-top: 150px;
+    margin-left: 100px;
+    color: dimgray;
+    background-color: black;
+    height: 80vh;
+}
+
+.onecard-section {
+ margin-left: 50px;
+ width: 380px;
+ position: absolute;
+}
+.onecard-section h1{
+color: #fff;
+margin-bottom: 25px;
+}
+.onecard-section p {
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-align: justify;
+}
+
+.list1-section {
+ position: relative;
+ left: 550px;
+}
+.list1-section ul{
+    list-style: none;
+}
+.list1-section ul li{
+    margin-bottom: 20px;
+}
+.list1-section li:nth-child(1){
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.list2-section {
+    position: relative;
+    left: 750px;
+    top: -200px;
+   }
+   .list2-section ul{
+       list-style: none;
+   }
+   .list2-section ul li{
+       margin-bottom: 20px;
+   }
+   .list2-section li:nth-child(1){
+       color: #fff;
+       font-size: 1.5rem;
+   }
+
+   .input-section{
+    position: absolute;
+    right: 0px;
+    top: 150px;
+   }
+   .news-head{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+   }
+  .input-section input{
+   height: 40px;
+   width: 255px;
+   border-radius: 5px;
+  }
+   .input-section button{
+    height: 40px;
+    width: 255px;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    position: relative;
+    right: 256px;
+    top: 50px;
+   }
+     @media (max-width: 500px) {
+        .onecard-section{
+        font-size: small;
+         position: absolute;
+         left: 0;
+         top: 100px;
+         width: 220px;
+        } 
+        .list1-section{
+        font-size: small;
+         position: absolute;
+         left: 50px;
+         top: 280px;
+        } 
+        .list2-section{
+            font-size: small;
+            position: absolute;
+         left: 50px;
+         top: 480px;
+        } 
+        .input-section{
+            font-size: small;
+            position: relative;
+            top: 550px;
+            left: -50px;
+         }
+         .input-section button{
+            position: relative;
+            top: 10px;
+            left: 0px;
+         }
+     }
+  
