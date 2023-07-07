@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <h1>
+            LO <br />
+            GO
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="" class="active">Home</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+          <div class="login-signup">
+            <a href="">Login</a>
+          </div>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="login-signup">
+          <a href="">Login</a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero-left">
+        <h3 class="say-hi">Say Hi To</h3>
+        <h1 class="main-txt">One Card</h1>
+        <p class="small-head">Co-branded Card Issuers :</p>
+
+        <img
+          class="images-brand"
+          src="./assets/brands.jpeg"
+          alt="brand-images"
+        />
+        <p class="big-para">
+          India's best meatl credit card. Built with full-stack tech. Backed by
+          the principles of simplicity, transparency, and giving back control to
+          the user.
+        </p>
+      </div>
+      <div class="hero-right">
+        <video class="video-ad" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="./assets/video-ad.mp4" />
+        </video>
+      </div>
+    </main>
+
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      nav = document.querySelector("nav");
+      hamburger.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

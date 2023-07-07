@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+
+/* body{
+    overflow: hidden;
+    height: 100vh;
+} */
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #031425;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    color: #fff;
+}
+header .header-left nav {
+    margin-left: 500px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #fff;
+    background: #4859b9;
+    padding: 5px 12px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+ 
+/* main hero-left */
+
+.hero-left{
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.say-hi{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.main-txt{
+    color: #4859b9;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.small-head{
+    color: #4859b9;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.images-brand{
+    width: 500px;
+    margin-left: -30px;
+    margin-bottom: 20px;
+}
+.big-para{
+    margin-top: 20px;
+    width: 500px;
+}
+
+/* video  */
+.hero-right{
+   position: absolute;
+   top: 0px;
+   right: 0;
+}
+.video-ad{
+  margin-top: 100px;
+  width: 600px;
+  float: right;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #0b2239;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+    .video-ad{
+        width: 600px;
+        margin-top: 600px;
+       position: absolute;
+       right: 100px;
+    
+          }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+    .images-brand{
+        width: 350px;
+    }
+    .hero-left{
+        margin-left: 30px;
+    }
+    .video-ad{
+    width: 350px;
+    margin-top: 600px;
+   position: absolute;
+   right: -80px;
+      }
+    .big-para{
+        width: 300px;
+        text-align: justify;
+    }
+}
