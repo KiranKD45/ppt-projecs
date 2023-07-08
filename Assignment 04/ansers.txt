@@ -1,0 +1,47 @@
+Q.1 Explain Hoisting in JavaScript?
+   Hoisting is a concept that enables us to extract values of variables and functions even before initializing/assigning value without getting errors and this happens during the 1st phase (memory creation phase) of the Execution Context.
+
+Q.2 Explain Temporal Dead Zone?
+   A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the computer completely initializes it with a value.
+
+Q.3 Difference between var & let?
+   var is global scoped where as let is blocked scope.
+   Hoisting is allowed in var but not in let.
+   var is ES1(Ecmascript) feature and let is introduced in ES6.
+   In var a variable can be declared more than once but in let it can't be possible.
+
+Q.4 What are the major features introduced in ECMAScript 6?
+  1.let and const Keywords
+  2.Arrow Functions
+  3.Multi-line Strings
+  4.Default Parameters
+  5.Template Literals
+  6.Destructuring Assignment
+  7.Enhanced Object Literals
+  8.Promises
+  9.Classes
+  10.Modules
+
+Q.5 What is the difference between let and const ?
+    let can be updated but cannot be re-declared into the scope.
+    Const cannot be updated or re-declared into the scope.
+
+Q.6  What is template literals in ES6 and how do you use them?
+     It provides an easy way to create multiline strings and perform string interpolation. Template literals are the string literals and allow embedded expressions.
+
+Q.7 What’s difference between map & forEach?
+    The map() method returns an entirely new array.and 	It does not change the original array.
+    The forEach() method does not returns a  new array based on the given array.and It is not executed for empty elements.
+
+Q.8 How can you destructure objects and arrays in ES6?
+    For both object and array destructuring, there are two kinds of destructuring patterns: binding pattern and assignment pattern, with slightly different syntaxes.In binding patterns, the pattern starts with a declaration keyword (var, let, or const). Then, each individual property must either be bound to a variable or further destructured.
+ex: 
+   let[name,age]=["kiran", 22];
+   console.log(name)//kiran
+   console.log(age)//22
+
+Q.9 How can you define default parameter values in ES6 functions?
+   Function parameters with default values are initialized with default values if they contain no value or are undefined. JavaScript function parameters are defined as undefined by default. However, it may be useful to set a different default value. That is where default parameters come into play.
+
+Q.10 What is the purpose of the spread operator (...) in ES6?
+     The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
