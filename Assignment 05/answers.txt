@@ -1,0 +1,55 @@
+Q1.What’s difference between Synchronous and Asynchronous?
+   Synchronous synchronous means to be in a sequence, i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed.
+   Asynchronous code allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it finishes the current one.
+
+Q2.What are Web Apis ?
+   Api constructs made available in programming languages to allow developers to create complex functionality more easily.
+
+Q.3 Explain SetTimeOut and setInterval ?
+    SetTimeOut is the function which executed only once after a specified time or period.
+    SetTimeOut(()=>{},2000)
+    setInterval is the function which executed every interval of specified time.
+    setInterval(()=>{},1000).
+
+Q.4 how can you handle Async code in JavaScript ?
+    The async function declaration creates a binding of a new async function to a given name. await keyword is permitted within the function body, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains.
+
+Q.5 What are Callbacks &  Callback Hell ?
+    callback is a function that is passed as an argument to another function.
+    Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure.
+
+Q.6 What are Promises & Explain Some Three Methods of Promise?
+    JavaScript Promise are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. Prior to promises events and callback functions were used but they had limited functionalities and created unmanageable code. Multiple callback functions would create callback hell that leads to unmanageable code. Promises are used to handle asynchronous operations in JavaScript.
+    Promise.all():
+    Promise.all() method takes an array of promises and returns a single promise, which is either resolved or rejected based on any iterable promise. It resolves if all the promises inside the array resolve and reject if any of the promises reject.
+    Promise.any():
+    Promise.any() method takes an array of promises and returns a single promise. It will resolve if any of the promises in an array are resolved with the resolved value. If all the promises are rejected, promise will be rejected with the error “AggregateError: All promises were rejected”. 
+    Promise.race():
+    Promise.race() method also takes an array of promises and return a single promise, which is either resolved or rejected based on an array of iterable promise. Unlike promise.all() it will not wait till all the promise executes. It will return the promise as soon as any of the promises is either resolve or reject.
+
+Q.7 What’s async & await Keyword in JavaScript?
+   Async: It simply allows us to write promises-based code as if it was synchronous and it checks that we are not breaking the execution thread. It operates asynchronously via the event loop.
+   Await: Await function is used to wait for the promise. It could be used within the async block only.
+
+Q.8 Explain Purpose of Try and Catch Block & Why do we need it?
+   A try / catch block is basically used to handle errors in JavaScript.we use this when we don't want an error in our script to break your code.
+
+Q.9 Explain fetch?
+    The fetch() method in JavaScript is used to request data from a server. The request can be of any type of API that returns the data in JSON or XML.
+
+Q.10 How do you define an asynchronous function in JavaScript using async/await?
+
+Ex:
+ async function f() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+
+  let result = await promise; // wait until the promise resolves (*)
+
+  alert(result); // "done!"
+}
+
+f();
+
