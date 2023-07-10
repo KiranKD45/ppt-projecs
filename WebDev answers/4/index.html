@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">Brand name</div>
+      <a href="#" class="toggle-btn">
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+      toggleBtn.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
