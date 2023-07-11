@@ -1,0 +1,58 @@
+Q.1 What’s Constructor And Its Purpose?
+    constructor creates and initializes an object instance of a class. In JavaScript, a constructor gets called when an object is created using the new keyword.
+    The purpose of a constructor is to create a new object and set values for any existing object properties.
+
+Q.2 Explain This Keyword and Its Purpose?
+    This keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function.
+
+Q.3 What’s Call Apply Bind Method & Difference Between them?
+    call() invokes a function with a given this value and arguments provided one by one.
+   syntax:
+    function.call( )
+
+    apply() invokes a function and allow you to pass arguments as an array.
+    syntax:
+    function.apply( )
+
+    bind() It returns a new function, allowing us to pass in array and any number of arguments.
+
+    syntax:
+
+    var xyz = function.bind( );
+       xyx( );
+
+
+Q.4 Explain OOPS ? 
+    Object-Oriented Programming is a programming style based on classes and objects. These group data (properties) and methods (actions) inside a box.
+
+Q.5 Whats Abstraction and Its Purpose?
+    Abstraction in JavaScript is to hide the implementation details and highlight an object’s essential features to the users. That’s how embedding Abstraction in a JavaScript program can enhance the readability of the code and avoid duplication. By providing only important details to the users, it also improves the security of an application.
+
+Q.6 Whats Polymorphism and Purpose of it?
+    Polymorphism means the same function with different signatures is called many times.
+    uses:
+       Programmers can use the same method name repeatedly.
+       Polymorphism has the effect of reducing the number of functionalities that can be paired together.
+
+Q.7  Whats Inheritance and Purpose of it?
+     inheritance is supported by using prototype object.classical inheritance, methods from base class get copied into derived class. Some people call it "Prototypal Inheriatance" and some people call it "Behaviour Delegation".
+
+Q.8 Whats Encapsulation and Purpose of it ?
+    Encapsulation is the bundling of data and the methods that act on that data such that access to that data is restricted from outside the bundle.
+
+Q.9 Explain Class in JavaScript?
+    A class in javascript is basically a blueprint or template of the object. New objects can be created from a class.
+    Syntax:
+    class classname {
+     constructor(parameter) {
+     this.classname = parameter;
+   }
+  }
+
+Q.10 What’s Super Keyword & What it does?
+    The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+    Super keyword in JavaScript can be used to access and call on an object’s parent.
+    Syntax:
+    super(arguments);
+    super.parentMethod(arguments);
+

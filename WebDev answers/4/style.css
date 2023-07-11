@@ -34,7 +34,7 @@
   position: absolute;
   top: 0.75rem;
   right: 1rem;
-  display: none;
+  display: none; /*i will gave display: flex in mobile version;*/
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
