@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  text-align: center;
+  position: fixed;
+  top: 20px;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+input {
+  height: 40px;
+  width: 180px;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+button {
+  height: 40px;
+  width: 200px;
+  background-color: #1e194d;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-left: -50px;
+  position: relative;
+  top: -1px;
+  border: none;
+}
+.info {
+  font-size: 1.5rem;
+  height: 80%;
+  width: 100%;
+  background-color: #1e194d;
+  margin-top: 100px;
+}
+.image {
+  text-align: center;
+}
+#img {
+  margin-top: 50px;
+  border-radius: 30px;
+  width: 200px;
+}
+.text-all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  bottom: 100px;
+  left: 250px;
+}
+
+.name,
+.location,
+.bio,
+.followers,
+.portfolio,
+.repos {
+  height: 60px;
+  width: 500px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 25px;
+  background-color: #5d48e8;
+  color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}

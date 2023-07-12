@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c329a;
+}
+.heading {
+  position: fixed;
+  top: 50px;
+  font-size: 10rem;
+  word-spacing: 20px;
+  letter-spacing: 50px;
+}
+
+.outside {
+  display: flex;
+  background-color: #6758f6;
+  border: 1px solid blue;
+  color: #fff;
+  padding: 4rem 5rem;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.hours,
+.seconds,
+.minutes {
+  text-align: center;
+  margin-left: 1.5rem;
+}
