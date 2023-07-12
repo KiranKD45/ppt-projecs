@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>MY ToDos</h1>
+    <main>
+      <input id="input" type="text" placeholder="enter a todo" />
+      <button onclick="addTodo()">Add ToDo</button>
+    </main>
+    <div class="box">
+      <p id="todo-input"></p>
+      <p>Status: <span id="status">None</span></p>
+      <button id="remove" onclick="deleteTodo()">Remove</button>
+      <button id="mark-complete" onclick="statusUpdate()">Mark Complete</button>
+      <button id="edit-task" onclick="editTodo()">Edit Task</button>
+    </div>
+    <div id="container">
+      <input id="Extra-input" type="text" placeholder="updating goes here" />
+      <button id="Extra-btn1" onclick="extraI()">status Update</button>
+      <button id="Extra-btn2" onclick="closef()">close</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

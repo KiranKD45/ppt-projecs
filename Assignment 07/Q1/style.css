@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+}
+
+h1 {
+  text-align: center;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.box {
+  padding: 6rem 8rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.question {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+select {
+  height: 40px;
+  width: 250px;
+}
+option {
+  height: 35px;
+}
+.button-submit {
+  margin-top: 10px;
+  height: 40px;
+  width: 250px;
+  font-weight: 700;
+  font-size: 1rem;
+}
