@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="left-container">
+      <h1 class="heading">Publish Your Story</h1>
+      <input
+        id="input-title"
+        oninput="liveData()"
+        type="text"
+        placeholder="Enter The Title"
+      />
+      <input
+        id="input-img"
+        oninput="liveData()"
+        type="text"
+        placeholder="Enter the Image URL"
+      />
+      <input
+        id="input-author"
+        oninput="liveData()"
+        type="text"
+        placeholder="Enter Author Name"
+      />
+      <input
+        id="input-category"
+        type="text"
+        oninput="liveData()"
+        placeholder="Category Eg: Educational"
+      />
+      <input
+        id="input-story"
+        oninput="liveData()"
+        type="text"
+        placeholder="Enter Your Story"
+      />
+      <button class="submit-btn" onclick="submitStory()">
+        Submit My Story
+      </button>
+    </main>
+    <main class="right-container">
+      <img id="img-url" src="" alt="" />
+      <div class="text-section">
+        <h2 id="title"></h2>
+        <h3 id="category"></h3>
+        <p id="story"></p>
+        <button id="author-btn"></button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 80vh;
+  background-color: #1b334b;
+}
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.left-container {
+  position: fixed;
+  top: 70px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.left-container input {
+  margin-bottom: 15px;
+  height: 40px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: 0.8rem;
+}
+#input-title,
+#input-img,
+#input-author,
+#input-category {
+  border: 2px solid #3598dc;
+  border-radius: 10px;
+  width: 300px;
+}
+#input-story {
+  height: 200px;
+  width: 300px;
+  border: 2px solid #3598dc;
+  border-radius: 10px;
+}
+
+.submit-btn {
+  height: 40px;
+  width: 300px;
+  border-radius: 3px;
+  border: none;
+  background-color: #3598dc;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.right-container {
+  height: 500px;
+  width: 68%;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+#img-url {
+  width: 40%;
+  height: 400px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  border-radius: 10px;
+}
+.text-section {
+  position: absolute;
+  left: 48%;
+  top: 50px;
+  height: 90%;
+  width: 50%;
+  padding: 10px;
+}
+.text-section p {
+  text-align: justify;
+  height: 75%;
+  margin-top: 10px;
+}
+
+.text-section h2 {
+  text-align: center;
+}
+.text-section h3 {
+  text-align: start;
+}
+#author-btn {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 30%;
+  border: none;
+  background-color: #234b7e;
+  color: #fff;
+  font-weight: 700;
+}
